@@ -33,4 +33,5 @@ for rock in $rocks; do
   # "install" phases, so we have to run as root.
   luarocks make rockspec/fb$rock-$version.rockspec
 done
+cd $root/torch
 luarocks make rockspec/fb_torch-$version.rockspec
